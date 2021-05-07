@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace ProxyPattern
 {
-    class RealSubject : Subject
+    public class RealSubject : Subject
     {
         public override void Request()
         { }
+        public bool Equals(Proxy subject)
+        {
+            return this == subject.getCopy();
+        }
     }
 }

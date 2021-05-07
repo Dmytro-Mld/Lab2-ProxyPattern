@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProxyPattern
 {
-    abstract class Subject
+    public abstract class Subject
     {
         public abstract void Request();
+        
     }
-
 }
